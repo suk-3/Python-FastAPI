@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilly</title>
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="holy-grail-grid min-h-screen flex flex-col">
+
+        <main class="flex-1 flex">
+            <div class="hidden md:flex flex-col flex-1 p-4 items-center justify-center login-bg">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+            <div class="bg-white flex flex-col flex-1 items-center justify-center">
+                <div class="flex flex-col gap-4 w-60">
+                    <div class="flex md:hidden">
+                        <img src="images/logo.svg" alt="Logo">
+                    </div>
+                    <div id="message" class="error-notify"></div>
+                    <div class="flex flex-col gap-2">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="rounded-sm p-2 border border-gray-300">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="rounded-sm p-2 border border-gray-300">
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="login.process()" class="flex-1 rounded-sm p-2 bg-blue-500 text-white">Login</button>
+                        <button onclick="login.reset()" class="flex-1 rounded-sm p-2 bg-blue-500 text-white">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div id="loading-screen"
+        class="hidden w-full h-full fixed flex items-center justify-center top-0 left-0 bg-white z-50">
+        <img src="images/logo.svg">
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

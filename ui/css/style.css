@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Ringside';
+  src: url("../font/RingsideRegular-Book.otf");
+}
+
+:root {
+  --primary-red: #E1251B;
+  --primary-black: #212121;
+  --primary-white: #FFFFFF;
+  --primary-pink: #FBCFC8;
+  --secondary-brown: #521207;
+  --secondary-rose: #FDE8E5;
+  --secondary-coral: #F58E7D;
+  --secondary-orange: #FDD1B0;
+  --secondary-gold: #FFC709;
+  --secondary-cream: #FFF0D8;
+  --secondary-green: #144B2D;
+  --secondary-sage: #C6DCD8;
+  --secondary-blue: #0F3A85;
+  --secondary-azure: #99BFE5;
+  --secondary-grey: #8A969E;
+  --secondary-stone: #E4EBF1;
+  --tint-rose: #FFF9F9;
+  --tint-cream: #FFFAF2;
+  --tint-stone: #F9FBFC;
+  --tint-sage: #F7FFFC;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Ringside;
+}
+
+body {
+  overflow: hidden;
+}
+
+.holy-grail-grid {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  flex: 3;
+}
+
+main {
+  overflow: auto;
+}
+
+textarea {
+  resize: none;
+  height: 93%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.nav-menu li {
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.login-bg {
+  background-color: var(--secondary-rose);
+}
+
+.seperator {
+  margin: 0px 15px;
+  border: 1px solid var(--secondary-grey);
+}
+
+.nav-menu li:hover {
+  background: var(--secondary-grey);
+}
+
+li>span svg {
+  transform: rotate(-180deg);
+}
+
+li:hover>span svg {
+  transform: rotate(-180deg);
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.h-10 {
+  height: 10% !important;
+}
+
+.h-20 {
+  height: 20% !important;
+}
+
+.h-30 {
+  height: 30% !important;
+}
+
+.h-40 {
+  height: 40% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-70 {
+  height: 70% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-90 {
+  height: 90% !important;
+}
+
+.error-notify{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--primary-red);
+}
